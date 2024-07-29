@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+  <!-- Heading Name -->
+  <div class="heading">
+    <h1>Image Gallery</h1>
+  </div>
+    <!-- Image Gallery section all image in one div -->
+    <div class="gallery">
+    <div class="gallery-item">
+      <img 
+ src="img1.webp" 
+onclick="openModal('img1.webp')" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+      <img 
+ src="img2.webp" 
+onclick="openModal('img2.webp')" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="img3.webp" 
+onclick="openModal('img3.webp')" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="img4.webp" 
+onclick="openModal('img4.webp')" 
+alt="Image 3">
+    </div>
+    <div class="gallery-item">
+      <img 
+ src="img5.webp" 
+onclick="openModal('img5.webp')" alt="Image 1">
+    </div>
+    
+    
+
+    
+  </div>
+    <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+    <script src="scrpit.js"></script>
+</body>
+</html>
